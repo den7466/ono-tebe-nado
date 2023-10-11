@@ -144,7 +144,6 @@
 .lots__card-list {
   display: flex;
   justify-content: start;
-  flex-grow: 1;
   gap: 25px;
   margin-bottom: 30px;
 }
@@ -218,7 +217,51 @@
 
 /* about */
 
-.about {}
+.about {
+  padding: 0 50px 180px;
+}
+
+.about__column {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.about__logo {
+  width: 240px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  border-radius: 50%;
+  justify-self: center;
+}
+
+.about__logo-image {
+  display: block;
+  width: 148px;
+}
+
+.about__title {
+  align-self: center;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about__text {
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.about__text p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+}
 
 
 /* footer */
