@@ -1,4 +1,6 @@
 /* header */
+/* TODO: Проверить, чтобы лого было посередине */
+/* TODO: Блок с адресом подумать, ка можно сделать лучше */
 
 .header {
   display: grid;
@@ -6,6 +8,8 @@
   align-items: center;
   padding: 92px 50px;
 }
+
+.header__menu {}
 
 .header__links-list {
   display: flex;
@@ -37,16 +41,25 @@
   justify-self: center;
 }
 
+.header__logo-image {}
+
 .address {
-  justify-self: end;
   display: flex;
   flex-direction: column;
   align-items: start;
   max-width: 240px;
   line-height: 1.35;
+  font-style: normal;
 }
 
+.header__address {
+  justify-self: end;
+}
+
+
 /* cover */
+/* TODO: Доделать главную надпись (отступы букв) */
+/* TODO: Убрать отрицательные з-индекс */
 
 .cover {
   background: url(../images/cover.jpg);
@@ -98,6 +111,7 @@
   font-weight: 400;
   line-height: 1.27;
   text-transform: uppercase;
+  word-spacing: 24px;
 }
 
 .bet-button {
@@ -110,3 +124,103 @@
   border: 1px solid #fff;
   cursor: pointer;
 }
+
+
+/* lots */
+/* TODO: Попробовать оптимизировать padding-и (боковые у всех одинаковые)*/
+
+.lots {
+  padding: 180px 50px 181px ;
+}
+
+.lots__heading {
+  margin-left: 40px;
+  margin-bottom: 27px;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.lots__card-list {
+  display: flex;
+  justify-content: start;
+  flex-grow: 1;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.lots__card-list-item {
+  list-style: none;
+  width: 430px;
+  min-width: 430px;
+  min-height: 450px;
+}
+
+.card-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  padding: 50px 40px;
+  position: relative;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: aqua;
+}
+
+.card_type_film {
+  background: url(../images/card-lot-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card_type_book {
+  background: url(../images/card-lot-02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card_type_picture {
+  background: url(../images/card-lot-03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card__title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #fff;
+}
+
+.card__text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-decoration: none;
+  color: #fff;
+}
+
+.lots__look-more-link {
+  margin-left: 40px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+
+/* about */
+
+.about {}
+
+
+/* footer */
+
+.footer {}
