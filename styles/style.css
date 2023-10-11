@@ -1,10 +1,9 @@
 /* header */
-/* TODO: Проверить, чтобы лого было посередине */
 /* TODO: Блок с адресом подумать, ка можно сделать лучше */
 
 .header {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 2fr 1fr 2fr;
   align-items: center;
   padding: 92px 50px;
 }
@@ -146,6 +145,7 @@
 .lots__card-list {
   display: flex;
   justify-content: start;
+  flex-wrap: wrap;
   gap: 25px;
   margin-bottom: 30px;
 }
