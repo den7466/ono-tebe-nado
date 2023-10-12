@@ -8,8 +8,6 @@
   padding: 92px 50px;
 }
 
-.header__menu {}
-
 .header__links-list {
   display: flex;
   justify-content: start;
@@ -42,8 +40,6 @@
   width: 130px;
   justify-self: center;
 }
-
-.header__logo-image {}
 
 .address {
   display: flex;
@@ -287,12 +283,6 @@
   display: flex;
   justify-content: space-between;
   align-items: start;
-}
-
-.footer__menu {}
-
-.footer__menu-list {
-
 }
 
 .footer__menu-list-item {
